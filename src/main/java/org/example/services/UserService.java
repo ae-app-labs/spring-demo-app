@@ -1,9 +1,11 @@
 package org.example.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
+// Default scope is Singleton, which means only 1 instance is created
+//@Scope("prototype")
 public class UserService {
 
 	@Autowired
